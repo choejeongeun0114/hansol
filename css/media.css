@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+.panel,.mCon03Search,.mMainCon04{display:none;}
+
+/*미디어쿼리*/
+@media screen and (max-width:786px){
+    /*공통*/
+    body{min-width:auto;}
+    .inner{width: auto;}
+    
+    /*모바일에만보이는*/
+    .panel,.mCon03Search,.mMainCon04{display:block;}
+    
+    /*모바일에서 안보이는*/
+    .gnb,.util,.mainCon02,.mainCon03>div p, .con03Search form,.mainCon03 .con03Search h3,.mainCon04,.con05List li p,.con05List li p, .fLogo, .fInfo{display:none;}
+    
+    /*header*/
+    #header{
+        margin:10px 20px;
+        height:auto;
+    }
+    #header h1{
+        background-size:400px;
+        width:70px;
+        height:28px;
+        background-position:0 0;
+        position:static;/*띄운속성을 가라앉히는 속성, 앱솔루트를 되돌리는*/   
+    }
+    
+    .panel{
+        width: 16px;
+        height: 16px;
+        background:url(../images/sp_com.png) no-repeat -227px -98px;
+        background-size:400px;
+        text-indent:-9999px;
+        position:absolute;
+        top:50%;
+        right:0;
+        margin-top:-8px;
+    }
+    .panel a{
+        display: block;
+        height: 100%;
+    }
+    /*메인슬라이더*/
+    
+    .mainSlider{
+        margin:0;
+        height:auto;
+    }
+    .mainTxt{
+        padding: 45% 0;
+    }
+    .mainTxt h2{font-size:14px;}
+    .mainTxt p{font-size:11px;}
+    
+    .sliderBtn{
+        width:13px;
+        height:23px;
+        background-size:400px;
+        background-position:-64px -30px;
+    }
+    .leftBtn{left:10px;}
+    .rightBtn{
+        background-position:-79px -30px;
+        right:10px;
+    }
+    
+    /*메인컨텐츠01*/
+    .mainCon01{padding:20px 0;}
+    
+    .mainCon01 ul{
+        display:block;
+        overflow: hidden;
+    }
+    .mainCon01 li{
+        width:33.33%;
+        font-size:14px;
+        margin:0;
+        padding:10px 0;
+    }
+    .mainCon01 li a span{
+        width:33px;
+        height:33px;
+        margin: 0 auto;
+        background-size:400px;
+    }
+    .con01Icon01{background-position:-1px -57px; }
+    .con01Icon02{background-position:-37px -57px; }
+    .con01Icon03{background-position:-74px -55px; }
+    .con01Icon04{background-position:-109px -57px; }
+    .con01Icon05{background-position:-145px -57px; }
+    .con01Icon06{background-position:-181px -57px; }
+    
+    .mainCon01 li:hover span{background-position-y:-92px;}
+    
+    /*메인컨텐츠03*/
+    .mainCon03{
+        padding: 0 10px;
+        margin-top:0;
+    }
+    .mainCon03>div{
+        width:calc(50% - 5px);
+        height: auto;
+        background-size:cover;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .mainCon03>div h3{
+        padding: 45% 0;
+        font-size:15px;
+    }
+    .mainCon03>div:nth-child(2), .mainCon03>div:last-child{
+        margin-right: 0;
+    }
+    .mainCon03 .mCon03Search{
+        background:#f2f0ed;
+        margin:-10px 0;
+    }
+    
+    /*mMainCon04*/
+    .mMainCon04{}
+    .mMainCon04 dl{
+        background: #f2f0ed;
+        margin: 0 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 45px;
+        line-height: 45px;
+        font-size: 13px;
+    }
+    .mMainCon04 dl dt{
+        width: 20%;
+        float: left;
+        font-weight: bold;
+        color: #2d5b79;
+        text-align: center;
+    }
+    .mMainCon04 dl dd{
+        float: left;
+        width: 70%;
+    }
+    .mMainCon04 dl a{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;        
+    }
+    
+ 
+    /*메인컨텐츠05*/
+    .mainCon05{
+        padding: 20px 10px; /*마진을주면 배경도 같이움직임*/
+        padding-bottom: 10px;
+    }
+    .con05List li{
+        width:calc(50% - 5px);
+        height: auto;
+        margin-right:10px;
+        margin-bottom: 10px;
+        background-size: 100% 100%; /*왜곡되긴하지만 모바일에서 야매로 사용가능*/
+    }
+    .con05List li:nth-child(2n){margin-right: 0;}
+    .con05List li h3{
+        padding:70% 0 20% 0;
+        font-size: 15px;
+    }
+    /*footer*/
+    .fMenu{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .fMenu li{
+        display: inline-block;
+        float: none;
+        line-height: 25px;
+    }
+    .fMenu:first-child li:last-child::after{display:none;}  
+    
+    .csFamily{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .csBox .num{
+        font-size: 13px;
+    }
+    .csBox, .familyBox{
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .csBox{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .familyBox{
+        width: 30%;
+    }
+    .fBottom{
+        padding: 30px 0;
+    }
+    .fBottom p{
+        margin-top: 0;
+    }
+}
